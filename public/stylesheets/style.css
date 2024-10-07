@@ -36,3 +36,12 @@ legend {
   padding-top:10%;
   justify-content: center;
 }
+.score{
+  margin-left:90%;
+}
+
+.review{
+  padding:2em;
+  background-color: #ececec;
+  border-radius: 5px;
+}

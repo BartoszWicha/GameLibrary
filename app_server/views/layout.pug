@@ -9,9 +9,10 @@ html
  body
   nav.navbar.fixed-top.navbar-toggleable-md.navbar-inverse
    .container   
-    a.nav-item.nav-link.col-3(active, href='/') Home
-    a.nav-item.nav-link.col-3(href='/GameList/') View Items
-    a.nav-item.nav-link.col-3(href='/about/') About Us
+   div.row.align-content-center 
+    a.nav-item.nav-link.col-lg-1.col-md-3.align-text-center(active, href='/') Home
+    a.nav-item.nav-link.col-lg-1.col-md-3.align-text-center(href='/GameList/') View Items
+    a.nav-item.nav-link.col-lg-1.col-md-3.align-text-center(href='/about/') About Us
   .container
     block content
      footer

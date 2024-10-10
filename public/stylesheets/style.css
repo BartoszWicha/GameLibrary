@@ -6,31 +6,6 @@ body {
   background-color: #ffffff;
 }
 
-.navbar {
-  background-color: #3874FC;
-  border-color: #3874FC;
-}
-
-.navbar-brand {
-  font-family: 'Lobster', cursive;
-}
-
-legend {
-  font-family: 'Lobster', cursive;
-}
-
-.nav-link{
-  color:black;
-  text-align: center;
-  color:#C8C8C8;
-  font-size: medium;
-}
-
-.nav-link:hover{
-  text-decoration: none;
-  color: #ffffff;
-}
-
 .welcomeMessage{
   font-size:10vh;
   padding-top:10%;
@@ -44,4 +19,9 @@ legend {
   padding:2em;
   background-color: #ececec;
   border-radius: 5px;
+  margin-top:4vh;
+}
+
+.navLink:hover{
+  background-color:rgb(230, 230, 230);
 }

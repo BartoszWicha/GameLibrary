@@ -1,12 +1,12 @@
 extends layout
 
 block content
- .card 
- .review
-  h2.p-2 Throne and Liberty
-  p.p-2 Costs: 0.00$
-  p.score 75/100
-  .genres.p-5
-    span.badge.badge-warning action
-    span.badge.badge-warning RPG
-    span.badge.badge-warning Adventur
+ each review in Reviews
+  .card 
+   .review
+    h2.p-2 #{review.Game}
+    p.p-2 #{review.Cost}
+    p.score #{review.Score}/100
+    .genres.p-5
+     each genre in review.Genres
+      span.badge.badge-warning= genre

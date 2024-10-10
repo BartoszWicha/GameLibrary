@@ -1,0 +1,23 @@
+extends layout 
+block content 
+ link(rel='stylesheet', href='/stylesheets/register.css')
+ content
+  .wrapper.fadeInDown
+   #formContent
+     form
+      h1.formHeader Register
+      .row
+         .col-lg-6.col-sm-12.col-md-12
+          p.l-100 Email
+          input.fadeIn(type='text', name='login', placeholder='Enter Email')
+          p Phone Number
+          input.fadeIn(type='text', name='login', placeholder='Enter Phone Number')
+          p Username
+          input.fadeIn(type='text', name='login', placeholder='Enter Username')
+         .col-lg-6.col-sm-12.col-md-12
+          p Password
+          input.fadeIn(type='text', name='login', placeholder='Enter Password')
+          p Confirm Password
+          input.fadeIn(type='text', name='login', placeholder='Confirm Password')
+      input.fadeIn(type='submit', value='Register')
+       

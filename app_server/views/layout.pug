@@ -3,22 +3,35 @@ html
  head
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   title= title
-  link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')   
+  link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
   link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
   link(rel='stylesheet', href='/stylesheets/style.css')
  body
-  nav.navbar.fixed-top.navbar-toggleable-md.navbar-inverse
-   .container   
-   div.row.align-content-center 
-    a.nav-item.nav-link.col-lg-1.col-md-3.align-text-center(active, href='/') Home
-    a.nav-item.nav-link.col-lg-1.col-md-3.align-text-center(href='/GameList/') View Items
-    a.nav-item.nav-link.col-lg-1.col-md-3.align-text-center(href='/about/') About Us
+  nav.navbar.navbar-default
+   .container-fluid
+    .navbar-header
+      a.navbar-brand(href='#') Game Library 
+    ul.nav.navbar-nav
+      li.navLink
+        a(href='/') Home
+      li.navLink
+        a(href='/GameList/') View Reviews
+      li.navLink
+        a(href='#') About
+    ul.nav.navbar-nav.navbar-right
+      li.navLink
+        a(href='/Login/') Login
+      li.navLink 
+        a(href='/Register/') Register
+
+
+
   .container
     block content
      footer
       .row
        .col-12
-        small &copy; Simon Holmes 2017
-  script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
-  script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')   
-  script(src='/javascripts/bootstrap.min.js')
+      small &copy; Simon Holmes 2017
+ script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
+ script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
+ script(src='/javascripts/bootstrap.min.js')

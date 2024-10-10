@@ -1,0 +1,14 @@
+extends layout 
+
+block content
+ link(rel='stylesheet', href='/stylesheets/formStyle.css')
+ .wrapper.fadeInDown
+   #formContent
+     // Login Form
+     form
+       input#login.fadeIn(type='text', name='login', placeholder='login')
+       input#password.fadeIn(type='text', name='login', placeholder='password')
+       .buttonContainer
+        input.fadeIn(type='submit', value='Log In')
+        a.registerButton(href='/Register/') Register 
+ 

@@ -27,13 +27,13 @@ res.render('gameList', {
 };
 
 const Register = function(req, res){
-    res.render('Register', { 
+    res.render('register', { 
         title: 'register',
 });
 };
 
 const Login = function(req, res){
-    res.render('Login', { 
+    res.render('login', { 
         title: 'login',
 });
 };

@@ -12,7 +12,7 @@ err=> {console.log(err)}
 catch (e) {
 console.log("could not connect");
 }
-require('./GameList');
+require('./locations');
 
 const reviewSchema = new mongoose.Schema({
     Author: {

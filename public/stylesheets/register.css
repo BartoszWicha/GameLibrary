@@ -1,10 +1,6 @@
 
 /* BASIC */
   
-  body {
-    height: 100vh;
-  }
-  
   /* STRUCTURE */
    
   .formHeader{
@@ -16,6 +12,7 @@
     min-height: 100%;
     text-align: center;
     margin-left:25%;
+    margin-top:5%;
   }
   #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;

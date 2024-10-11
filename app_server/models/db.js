@@ -17,7 +17,7 @@ require('./locations');
 const reviewSchema = new mongoose.Schema({
     Author: {
         type: String,
-        default: 'Anonymouse'
+        default: 'Anonymous'
     },
     Score: {
         type:Number,
@@ -43,7 +43,8 @@ const GameListSchema = new mongoose.Schema({
         max: 100},
     Cost: {
         type: Number,
-        'default': 0,},
+        'default': 0
+    },
     Genres: [String],
     Review: [reviewSchema]
 });

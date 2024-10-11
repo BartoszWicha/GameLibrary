@@ -11,19 +11,19 @@ html
    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#NavbarCollapse' 
    aria-controls='NavbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
-   .collapse.navbar-collapse#navbarollapse
+   .collapse.navbar-collapse#NavbarCollapse
     a.navbar-brand.ms-2(href='#') Game Review Library
     ul.navbar-nav.mr-auto.mt-2.mt-lg-0
      li.nav-item.ms-4.navLink
-        a.nav-link(href='/') Welcome
+        a.nav-link(href='/') Home
      li.nav-item.ms-4.navLink
         a.nav-link(href='/GameList/') View Reviews
      li.nav-item.ms-4.navLink
         a.nav-link(href='#') About Us
     ul.navbar-nav.mr-auto.mt-2.mt-lg-0.ms-auto
-     li.nav-item.me-4.navLink
+     li.nav-item.ms-4.navLink
         a.nav-link(href='/Login') Log In
-     li.nav-item.me-4.navLink
+     li.nav-item.ms-4.me-4.navLink
         a.nav-link(href='/Register/') Register
 
 
@@ -34,4 +34,5 @@ html
        .col-12
       small &copy; Simon Holmes 2017
  script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
+ script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
  script(src='/javascripts/bootstrap.min.js')

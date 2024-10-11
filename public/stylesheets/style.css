@@ -11,16 +11,6 @@ body {
   padding-top:10%;
   justify-content: center;
 }
-.score{
-  margin-left:90%;
-}
-
-.review{
-  padding:2em;
-  background-color: #ececec;
-  border-radius: 5px;
-  margin-top:4vh;
-}
 
 .navLink:hover{
   background-color:rgb(230, 230, 230);

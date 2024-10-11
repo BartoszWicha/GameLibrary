@@ -1,12 +1,14 @@
 extends layout
 
 block content
+ link(rel='stylesheet', href='/stylesheets/Reviews.css')
+
  each review in Reviews
   .card 
    .review
-    h2.p-2 #{review.Game}
+    h2.GameTitle #{review.Game}
     p.p-2 #{review.Cost}
-    p.score #{review.Score}/100
-    .genres.p-5
+    p.score Score: #{review.Score}/100
+    .genres
      each genre in review.Genres
-      span.badge.badge-warning= genre
+      span.badge.badge-warning.genreItem= genre

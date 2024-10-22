@@ -1,17 +1,14 @@
 const mongoose = require('mongoose');
 const dbURI = process.env.MONGODB_URI;
 
-try {
-mongoose.connect(
-dbURI,
-{ useNewUrlParser: true, useUnifiedTopology: true }).then(
-() => {console.log(" Mongoose is connected")},
-err=> {console.log(err)}
-);
-}
-catch (e) {
-console.log("could not connect");
-}
+const connectDB = async () => {
+    try {
+      await mongoose.connect(dbURI); // No need for useNewUrlParser or useUnifiedTopology
+      console.log("Mongoose is connected");
+    } catch (err) {
+      console.error("Error connecting to MongoDB:", err);
+    }
+  };
 require('./games.');
 
 const reviewSchema = new mongoose.Schema({

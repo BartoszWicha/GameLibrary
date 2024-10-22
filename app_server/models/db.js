@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dbURI = "mongodb+srv://wichabartosz:6jaeP!v36i9u@cluster0.in0dz.mongodb.net/GameLibrary?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://wichabartosz2003:6jaeP!v36i9u@cluster0.ds6wg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 try {
 mongoose.connect(

@@ -21,7 +21,14 @@ res.render('gameList', {
         Score: "60",
         Cost: "30$",
         Genres: ["Action", "Adventure", "RPG", "Multiplayer"],
-        } 
+        },
+        {
+        Game:"CS GO",
+        Score: "50",
+        Cost: "Free",
+        Genres: ["Shooter", "Action", "Multiplayer"],
+        }
+        
     ]
     });
 };

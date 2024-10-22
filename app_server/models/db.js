@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+/*const mongoose = require('mongoose');
 const dbURI = process.env.MONGODB_URI;
 
 try {
@@ -49,4 +49,4 @@ const GameListSchema = new mongoose.Schema({
     Review: [reviewSchema]
 });
 
-mongoose.model('GameReviews', GameListSchema);
+mongoose.model('GameReviews', GameListSchema);*/

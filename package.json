@@ -11,20 +11,20 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "cookie-parser": "^1.4.4",
-    "debug": "^2.6.9",
-    "express": "^4.16.1",
+    "cookie-parser": "^1.4.7",
+    "debug": "^4.3.7",
+    "express": "^4.21.1",
     "font-awesome": "^4.7.0",
-    "http-errors": "^1.6.3",
+    "http-errors": "^2.0.0",
     "jquery": "^3.7.1",
     "mongodb": "^6.10.0",
     "mongoose": "^8.7.2",
     "mongosh": "^2.3.2",
-    "morgan": "^1.9.1",
-    "node": "^8.9.0",
+    "morgan": "^1.10.0",
+    "node": "^22.10.0",
     "nodemo": "^1.0.0",
     "nodemon": "^3.1.7",
     "popper.js": "^1.16.1",
-    "pug": "2.0.0-beta11"
+    "pug": "3.0.3"
   }
 }

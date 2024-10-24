@@ -1,14 +1,15 @@
 extends layout
 
 block content
- link(rel='stylesheet', href='/stylesheets/Reviews.css')
+ link(rel='stylesheet', href='/stylesheets/gameList.css')
 
- each review in Reviews
+ each game in Games
    .review
-    h2.GameTitle #{review.Game}
+    h2.GameTitle #{game.Name}
     div.d-flex.flex-md-row.flex-lg-row.flex-sm-column
-     p.p-2.col-6 #{review.Cost}
-     p.p-2.col-6.d-flex.justify-content-md-end Score: #{review.Score}/100
+     p.p-2.col-6 #{game.Cost}
+     p.p-2.col-6.d-flex.justify-content-md-end Score: #{game.Score}/100
     .genres.d-flex.col-lg-12.flex-sm-column.flex-md-row
-     each genre in review.Genres
+     each genre in game.Genres
       span.badge.badge-warning.genreItem.col-md-2.col-sm-7.mx-md-2.mt-2.mx-sm-0= genre
+    a(href=`/GameReviews/${game.Name.replace(/\s+/g, '-').toLowerCase()}`) view Reviews hgh

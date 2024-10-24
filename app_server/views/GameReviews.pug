@@ -1,3 +1,43 @@
 extends layout 
- block content 
- 
+
+block content
+ link(rel='stylesheet', href='/stylesheets/reviews.css')
+ #dim
+  .containerReviews.bg-white
+   h1 #{Game.Name} Reviews
+
+   if hasReviews
+    .row.border.overflowScroll
+      .container.d-flex
+       .review.border.col-12
+        p this is a review
+       .review.border.col-12
+        p this is a review
+       .review.border.col-12
+        p this is a review
+       .review.border.col-12
+        p this is a review
+
+
+
+   else
+    p No Reviews Exist for This Game Try Leaving One
+   button#showBtn.col-md-12(type="button") Leave a review
+
+ #slidingContainer
+  form  
+    h1.header1 Add Review 
+    .container 
+     .row.mt-3
+      label(for="rating") Score 1-100
+      input.score(type="number" id="rating" name="rating" min="1" max="100" required)
+     .row.mt-3
+      label(for="description") Description
+      textarea.description(type="text" name="description" required rows='5')
+    
+     div
+      .row.d-flex.justify-content-around    
+       button#hideBtn.button(type="button") Cancel
+       input.button(type="submit")
+
+  script(src='/javascripts/displayAddReview.js')

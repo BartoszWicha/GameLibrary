@@ -21,3 +21,7 @@ body {
 .welcomeMessage {
   margin-top: 50%;
 }
+
+.navbar{
+  border-bottom:3px solid #5fbae9;
+}

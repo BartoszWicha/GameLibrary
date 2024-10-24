@@ -104,14 +104,15 @@ input[type="number"]:focus{
     border-radius: 5px 5px 5px 5px;
 }
 
-.overflowScroll{
+#overflowScroll{
     overflow-x: scroll;
     width:100%;
     height:50vh;
 }
 
-.overflowScroll::-webkit-scrollbar {
+#overflowScroll::-webkit-scrollbar {
     display:none;
+    scroll-behavior: smooth;
 }
 
 body{

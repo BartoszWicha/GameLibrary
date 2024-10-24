@@ -7,7 +7,7 @@ block content
    h1 #{Game.Name} Reviews
 
    if hasReviews
-    .row.border.overflowScroll
+    .row.border#overflowScroll
       .container.d-flex
        .review.border.col-12
         p this is a review
@@ -17,7 +17,8 @@ block content
         p this is a review
        .review.border.col-12
         p this is a review
-
+    button.button#leftScroll &#8592;
+    button.button#rightScroll &#8594;
 
 
    else

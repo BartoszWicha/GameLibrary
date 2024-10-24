@@ -14,3 +14,23 @@ hideBtn.addEventListener('click', () => {
     slidingContainer.classList.remove('active');
     body.classList.remove('active');
 });
+
+const scrollContainer = document.getElementById('overflowScroll');
+const leftScrollButton = document.getElementById('leftScroll');
+const rightScrollButton = document.getElementById('rightScroll');
+
+leftScrollButton.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: -200,  // Adjust this value for how much to scroll per click
+      behavior: 'smooth'
+    });
+  });
+
+  // Scroll right by 200px when the right button is clicked
+  rightScrollButton.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+      left: 200,  // Adjust this value for how much to scroll per click
+      behavior: 'smooth'
+    });
+    console.log('back');
+  });

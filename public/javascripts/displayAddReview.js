@@ -20,17 +20,27 @@ const leftScrollButton = document.getElementById('leftScroll');
 const rightScrollButton = document.getElementById('rightScroll');
 
 leftScrollButton.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-      left: -200,  // Adjust this value for how much to scroll per click
-      behavior: 'smooth'
-    });
+    smoothScroll(scrollContainer, -200, 500);
   });
 
-  // Scroll right by 200px when the right button is clicked
   rightScrollButton.addEventListener('click', () => {
-    scrollContainer.scrollBy({
-      left: 200,  // Adjust this value for how much to scroll per click
-      behavior: 'smooth'
-    });
-    console.log('back');
+     smoothScroll(scrollContainer, 200, 500);
   });
+
+  function smoothScroll(container, distance, duration) {
+    let start = container.scrollLeft;
+    let startTime = null;
+
+    function scrollStep(timestamp) {
+        if (!startTime) startTime = timestamp;
+        let progress = timestamp - startTime;
+        let current = Math.min(progress / duration, 1); 
+        container.scrollLeft = start + distance * current;
+
+        if (progress < duration) {
+            window.requestAnimationFrame(scrollStep);
+        }
+    }
+
+    window.requestAnimationFrame(scrollStep);
+}

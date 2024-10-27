@@ -7,18 +7,19 @@ block content
    h1 #{Game.Name} Reviews
 
    if hasReviews
-    .row.border#overflowScroll
-      .container.d-flex
-       .review.border.col-12
-        p this is a review
-       .review.border.col-12
-        p this is a review
-       .review.border.col-12
-        p this is a review
-       .review.border.col-12
-        p this is a review
-    button.button#leftScroll &#8592;
-    button.button#rightScroll &#8594;
+
+    button#leftScroll.float-start &#8592;
+    button#rightScroll.float-end &#8594;
+    .fade-container
+     #overflowScroll.d-flex.flex-row
+      each r in Game.Reviews
+        .review
+         img.icon(src='/images/Icon.jpg' height="70" width="70" alt="Icon")
+         .text
+          p 
+           strong #{r.Author}
+          p 
+           strong #{r.TimeStamp.toLocaleDateString('en-IE')}
 
 
    else

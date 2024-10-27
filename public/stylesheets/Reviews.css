@@ -105,17 +105,71 @@ input[type="number"]:focus{
 }
 
 #overflowScroll{
-    overflow-x: scroll;
+    overflow-x:hidden;
+    position:relative;
     width:100%;
     height:50vh;
 }
 
+.fade-container{
+    width:50%;
+    margin-left:25%;
+    margin-top: 3%;
+}
+
+
+
 #overflowScroll::-webkit-scrollbar {
-    display:none;
-    scroll-behavior: smooth;
+    display: none;
 }
 
 body{
     padding: 0px;
     margin:0px;
+}
+
+#leftScroll{
+    margin-left:15%;
+}
+
+#rightScroll, #leftScroll{
+    height:50px;
+    width:50px;
+    margin-top:13%;
+    border-radius:50%;
+    border:none;
+    background-color:#56baed;
+    color: white;
+}
+
+#rightScroll{
+    margin-Right:15%;
+}
+
+.containerReviews{
+    background-color: white;
+    height:100vh;
+    width:100%;
+}
+
+.review{
+    border:3px solid gray;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    padding-top:5%;
+    font-size: larger;
+    min-width:40%;
+    background-color:#f6f6f6;
+    border-radius:40px;
+    margin-right:50px;
+    margin-top:33px;
+}
+
+.icon{
+    position:absolute;
+    top:-35px;
+    border-radius:50%;
+    border:3px solid gray;
 }

@@ -2,29 +2,29 @@ extends layout
 
 block content
  link(rel='stylesheet', href='/stylesheets/reviews.css')
- #dim
-  .containerReviews.bg-white
-   h1 #{Game.Name} Reviews
+ 
+ h1 #{Game.Name} Reviews
 
-   if hasReviews
+ if hasReviews
 
     button#leftScroll.float-start &#8592;
     button#rightScroll.float-end &#8594;
-    .fade-container
-     #overflowScroll.d-flex.flex-row
+    .ReviewContainer
+     #overflowScroll.d-flex.flex-lg-row
       each r in Game.Reviews
         .review
          img.icon(src='/images/Icon.jpg' height="70" width="70" alt="Icon")
          .text
           p 
-           strong #{r.Author}
+           strong #{r.Author} - #{r.TimeStamp.toLocaleDateString('en-IE')} 
           p 
-           strong #{r.TimeStamp.toLocaleDateString('en-IE')}
+           strong.displayScore.p-2 #{r.Score}/100
+          p.mt-5 ''#{r.ReviewText}''
 
 
-   else
+ else
     p No Reviews Exist for This Game Try Leaving One
-   button#showBtn.col-md-12(type="button") Leave a review
+ button#showBtn.col-md-12(type="button") Leave a review
 
  #slidingContainer
   form  

@@ -12,3 +12,4 @@ router.get('/GameReviews/:Game', ctrlgames.GameReviews);
 /* Other pages */
 router.get('/about', ctrlOthers.about);
 module.exports = router;
+

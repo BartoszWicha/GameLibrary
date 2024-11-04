@@ -1,6 +1,7 @@
 body{
     height:100%;
     width:100%;
+    background-color: white;
 }
 #slidingContainer{
     height:65vh;
@@ -23,19 +24,6 @@ form{
     padding:10px;
     height:100%;}
 
-#dim{
-    position:absolute;
-    width:100%;
-    left:0px;
-    min-height:100%;
-    z-index: -1;
-}
-
-#dim.active{
-    z-index: inherit;
-    background-color: black;
-    opacity:0.5;
-}
 
 .button{
     background-color: #56baed;
@@ -108,19 +96,25 @@ input[type="number"]:focus{
     overflow-x:hidden;
     position:relative;
     width:100%;
-    height:50vh;
+    height:60vh;
 }
 
-.fade-container{
+.ReviewContainer{
     width:50%;
     margin-left:25%;
     margin-top: 3%;
 }
 
-
-
 #overflowScroll::-webkit-scrollbar {
     display: none;
+}
+
+.displayScore{
+    border-radius: 10px;
+    width: 50%;
+    align-items: center;
+    background-color:#68c7f7;
+    color:white;
 }
 
 body{
@@ -146,12 +140,6 @@ body{
     margin-Right:15%;
 }
 
-.containerReviews{
-    background-color: white;
-    height:100vh;
-    width:100%;
-}
-
 .review{
     border:3px solid gray;
     position:relative;
@@ -160,11 +148,12 @@ body{
     padding:20px;
     padding-top:5%;
     font-size: larger;
-    min-width:40%;
+    min-width:300px;
     background-color:#f6f6f6;
     border-radius:40px;
     margin-right:50px;
-    margin-top:33px;
+    margin-top:40px;
+    min-height:300px;
 }
 
 .icon{
@@ -172,4 +161,9 @@ body{
     top:-35px;
     border-radius:50%;
     border:3px solid gray;
+}
+
+.text{
+    text-align: center;
+    margin-top:35px;
 }

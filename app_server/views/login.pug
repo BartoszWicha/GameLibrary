@@ -4,10 +4,9 @@ block content
  link(rel='stylesheet', href='/stylesheets/formStyle.css')
  .wrapper.fadeInDown
    #formContent
-     // Login Form
-     form
-       input#login.fadeIn.col-11(type='text', name='login', placeholder='login')
-       input#password.fadeIn.col-11(type='text', name='login', placeholder='password')
+     form(method='POST', action='/Login')
+       input#login.fadeIn.col-11(type='text', name='Email', placeholder='Email')
+       input#password.fadeIn.col-11(type='text', name='Password', placeholder='password')
        .buttonContainer.d-flex.flex-md-row.flex-sm-column.justify-content-around.align-items-center
         input.col-md-5.col-sm-11.p-3.fadeIn.mt-md-4.mb-md-5.mb-sm-4.mt-sm-4(type='submit', value='Log In')
         a.col-md-5.col-sm-11.p-3.registerButton.mt-md-4.mb-md-5.mt-sm-0.mb-sm-5(href='/Register/') Register 

@@ -21,10 +21,14 @@ html
      li.nav-item.ms-4.navLink
         a.nav-link(href='#') About Us
     ul.navbar-nav.mr-auto.mt-2.mt-lg-0.ms-auto
-     li.nav-item.ms-4.navLink
-        a.nav-link(href='/Login') Log In
-     li.nav-item.ms-4.me-4.navLink
-        a.nav-link(href='/Register/') Register
+     if(!user)
+      li.nav-item.ms-4.navLink
+         a.nav-link(href='/Login') Log In
+      li.nav-item.ms-4.me-4.navLink
+         a.nav-link(href='/Register/') Register
+     else
+      li.nav-item.ms-4.navLink
+         a.nav-link(href='/Logout') Logout
 
 
   .container
@@ -33,6 +37,8 @@ html
       .row
        .col-12
       small &copy; Bartosz Wicha
- script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
- script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
- script(src='/javascripts/bootstrap.min.js')
+ block scripts
+  script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
+  script(src='/javascripts/bootstrap.min.js')
+ 

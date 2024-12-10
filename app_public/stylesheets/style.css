@@ -1,0 +1,27 @@
+@import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+
+body {
+  font-family: "Cabin", Arial, sans-serif;
+  color: black;
+  background-color: #414a4c	;
+}
+
+.welcomeMessage{
+  font-size:10vw;
+  color:white;
+}
+.navLink {
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.navLink:hover {
+  box-shadow: 0.5rem 0.5rem rgb(0, 0, 0, 1), -0.5rem -0.5rem rgb(204, 204, 204, 1);
+}
+
+.welcomeMessage {
+  margin-top: 50%;
+}
+
+.navbar{
+  border-bottom:3px solid #5fbae9;
+}

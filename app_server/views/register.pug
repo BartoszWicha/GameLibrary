@@ -4,20 +4,20 @@ block content
  content
   .wrapper.fadeInDown
    #formContent
-     form
+     form(action="/Register" method="POST")
       h1.formHeader Register
       .row
          .col-lg-6.col-sm-12.col-md-12
           p.l-100 Email
-          input.fadeIn(type='text', name='login', placeholder='Enter Email')
+          input.fadeIn(type='text', name='Email', placeholder='Enter Email')
           p Phone Number
-          input.fadeIn(type='text', name='login', placeholder='Enter Phone Number')
+          input.fadeIn(type='text', name='Phonenum', placeholder='Enter Phone Number')
           p Username
-          input.fadeIn(type='text', name='login', placeholder='Enter Username')
+          input.fadeIn(type='text', name='UserName', placeholder='Enter Username')
          .col-lg-6.col-sm-12.col-md-12
           p Password
-          input.fadeIn(type='text', name='login', placeholder='Enter Password')
+          input.fadeIn(type='text', name='Password', placeholder='Enter Password')
           p Confirm Password
-          input.fadeIn(type='text', name='login', placeholder='Confirm Password')
+          input.fadeIn(type='text', name='ConfirmPassword', placeholder='Confirm Password')
       input.fadeIn(type='submit', value='Register')
        

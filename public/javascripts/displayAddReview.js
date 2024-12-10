@@ -1,6 +1,19 @@
 const showBtn = document.getElementById('showBtn');
 const hideBtn = document.getElementById('hideBtn');
 const body = document.getElementById('dim');
+const display = document.getElementById('ReviewContainer');
+
+window.onload = function() {
+    if(display != null){
+        leftScrollButton.addEventListener('click', () => {
+            smoothScroll(scrollContainer, -200, 500);
+          });
+        
+        rightScrollButton.addEventListener('click', () => {
+             smoothScroll(scrollContainer, 200, 500);
+        });
+    }
+  };
 
 const slidingContainer = document.getElementById('slidingContainer');
 // Show the container on "Show" button click
@@ -19,15 +32,7 @@ const scrollContainer = document.getElementById('overflowScroll');
 const leftScrollButton = document.getElementById('leftScroll');
 const rightScrollButton = document.getElementById('rightScroll');
 
-leftScrollButton.addEventListener('click', () => {
-    smoothScroll(scrollContainer, -200, 500);
-  });
-
-  rightScrollButton.addEventListener('click', () => {
-     smoothScroll(scrollContainer, 200, 500);
-  });
-
-  function smoothScroll(container, distance, duration) {
+function smoothScroll(container, distance, duration) {
     let start = container.scrollLeft;
     let startTime = null;
 
